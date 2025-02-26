@@ -1,0 +1,129 @@
+
+type: tank
+name: Ambulance
+description: Supports allies using a high-efficiency repair beam and an area-wide healing pulse for multiple targets.
+hitSize: 12
+singleTarget: false
+omniMovement: false
+rotateMoveFirst: true
+faceTarget: false
+health: 450
+armor: 3
+speed: 0.55
+rotateSpeed: 2.6
+itemCapacity: 15
+treadRects: [
+    {
+    x: -22
+    y: -23
+    width: 6
+    height: 39
+    treadPullSpeed: 1.2
+    }
+]
+abilities: [
+    {
+    type: RepairFieldAbility
+    amount: 20
+    reload: 150
+    range: 50
+    }
+]
+weapons: [
+    {
+      name: ambulance-top2
+      type: repairBeamWeapon
+      x: 4
+      y: 5
+      mirror: false
+      beamWidth: 0.5
+      repairSpeed: 0.5
+      shootY: 2
+      bullet: {
+          maxRange: 80
+      }
+    }
+    {
+    name: ambulance-top
+    layerOffset: 2
+    x: 0
+    y: 0
+    shootSound: malignShoot
+    reload: 75
+    recoil: 0.5
+    recoilTime: 15
+    rotate: true
+    rotateSpeed: 3
+    mirror: false
+    shootY: 9
+    parts: [
+    {
+        type: RegionPart
+        mirror: false
+        suffix: -gun
+        under: false
+        layerOffset: -1
+        moves: [
+            {
+            progress: recoil
+            y: -1.5
+            }
+          ]
+        }
+        ]
+    bullet: {
+        type:BasicBulletType
+        lifetime: 46
+        speed: 3.4
+        damage: 12
+        splashDamage: 28
+        splashDamageRadius: 18
+        healPercent: 12
+        drawSize: 12
+        frontColor: FFFFFF
+        backColor: 98FFA9
+        width: 12
+        height: 10
+        status: electrified
+        trailEffect: none
+        trailColor: 98FFA9
+        trailWidth: 3
+        trailLength: 14
+        homingRange: 65
+        homingPower: 0.06
+        homingDelay: 10
+        hitSound: plasmaboom
+        despawnEffect: none
+        collidesTeam: true
+        hitEffect: {
+        type: MultiEffect
+        effects: [
+        {
+        type: ParticleEffect
+        particles: 9
+        sizeFrom: 1.5
+        sizeTo: 0
+        line: true
+        lifetime: 15
+        length: 40
+        baseLength: 4
+        colorTo: FFFFFF
+        colorFrom: 98FFA9
+        }
+        {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 30
+        lifetime: 8
+        strokeFrom: 5
+        strokeTo: 0
+        lenFrom: 0
+        lenTo: 10
+        colorTo: FFFFFF
+        colorFrom: 98FFA9
+        }
+        ]
+      }
+    }
+  }
+]

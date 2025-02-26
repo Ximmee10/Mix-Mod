@@ -1,0 +1,139 @@
+
+type: tank
+name: Steel
+description: Medium-armored tank with a precise, reliable cannon.
+hitSize: 16
+singleTarget: false
+omniMovement: false
+rotateMoveFirst: true
+faceTarget: false
+health: 650
+armor: 5
+speed: 0.48
+rotateSpeed: 2.2
+itemCapacity: 50
+treadRects: [
+    {
+        x: -30
+        y: -24
+        width: 11
+        height: 48 #48
+        treadFrames: 4
+        treadPullSpeed: 0.8
+        treadContinuous: true
+    }
+]
+weapons: [
+    {
+    name: steel-top2
+    layerOffset: 1
+    x: -4
+    y: 4.5
+    shootSound: pew
+    reload: 15
+    recoil: 0.3
+    rotate: true
+    rotateSpeed: 8
+    mirror: false
+    inaccuracy: 8
+    shootY: 3.5
+    bullet: {
+        type: BasicBulletType 
+    damage: 5
+    speed: 3.8
+    lifetime: 25
+    ammoUseEffect: casing1
+    width: 5
+    height: 6.5
+        
+     }
+ }
+    {
+    name: steel-top
+    layerOffset: 2
+    x: 0
+    y: -3
+    shootSound: shootBig
+    reload: 110
+    recoil: 0.5
+    recoilTime: 20
+    rotate: true
+    rotateSpeed: 2.5
+    mirror: false
+    inaccuracy: 2
+    shootY: 12
+    targetAir: false
+    parts: [
+    {
+        type: RegionPart
+        mirror: false
+        suffix: -gun
+        under: false
+        layerOffset: -1
+        y: 3
+        moves: [
+            {
+            progress: recoil
+            y: -1.6
+            }
+          ]
+        }
+        ]
+    bullet: {
+    type: BasicBulletType 
+    damage: 55
+    speed: 5
+    lifetime: 35
+    shootEffect: shootBig
+    ammoUseEffect: casing1
+    width: 10
+    height: 12
+    hitShake: 0.8
+    knockback: 1.5
+    inaccuracy: 2
+    splashDamage: 45
+    splashDamageRadius: 35
+    trailColor: FFA27D
+    trailEffect: none
+    trailWidth: 0.8
+    trailLength: 4
+    collidesGround: true
+    collidesAir: false
+    status: blasted
+    hitSound: explosion
+    hitEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            particles: 15
+            sizeFrom: 3
+            sizeTo: 0
+            lifetime: 20
+            colorFrom: FF5F11
+            colorTo: FFFFFF
+        },
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 35
+            lifetime: 15
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: FF5F11
+            colorTo: FFFFFF
+        }
+    ]
+    despawnEffect: {
+    type: ParticleEffect
+    particles: 12
+    sizeFrom: 3
+    sizeTo: 0
+    lifetime: 24
+    colorFrom: FF5F11
+    colorTo: FFFFFF
+     }
+    }
+   }
+ }
+]

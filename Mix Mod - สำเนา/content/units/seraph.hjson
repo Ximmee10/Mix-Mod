@@ -1,0 +1,141 @@
+
+type: tank
+name: Seraph
+description: Supports allies using a high-efficiency repair beam and an area-wide healing pulse for multiple targets.
+hitSize: 18
+singleTarget: false
+omniMovement: false
+rotateMoveFirst: true
+faceTarget: false
+health: 1000
+armor: 7
+speed: 0.55
+rotateSpeed: 2.5
+itemCapacity: 15
+treadRects: [
+    {
+    x: -37
+    y: -43
+    width: 13
+    height: 80
+    treadPullSpeed: 1.2
+    }
+]
+abilities: [
+    {
+    type: StatusFieldAbility
+    effect: overclock
+    duration: 720
+    range: 80
+    reload: 360
+    }
+] 
+
+weapons: [
+    {
+      name: seraph-top2
+      type: repairBeamWeapon
+      x: 8.5
+      y: 4.5
+      mirror: true
+      beamWidth: 0.55
+      repairSpeed: 0.8
+      shootY: 2.5
+      bullet: {
+          maxRange: 80
+      }
+    }
+    {
+    name: seraph-top
+    layerOffset: 2
+    x: 0
+    y: 1
+    shootSound: malignShoot
+    reload: 95
+    recoil: 0.6
+    recoilTime: 18
+    rotate: true
+    rotateSpeed: 2.6
+    mirror: false
+    shootY: 6
+    shoot: {
+    type: ShootAlternate
+    shots: 2
+    shotDelay: 0
+    spread: 12
+    }
+    parts: [
+    {
+        type: RegionPart
+        mirror: true
+        suffix: -gun
+        under: false
+        layerOffset: -1
+        x: 6
+        y: 0.5
+        moves: [
+            {
+            progress: recoil
+            y: -0.8
+            }
+          ]
+        }
+        ]
+    bullet: {
+        type:BasicBulletType
+        lifetime: 50
+        speed: 3.6
+        damage: 12
+        splashDamage: 45
+        splashDamageRadius: 24
+        healPercent: 10
+        drawSize: 16
+        frontColor: FFFFFF
+        backColor: 98FFA9
+        width: 12
+        height: 10
+        status: electrified
+        trailEffect: none
+        trailColor: 98FFA9
+        trailWidth: 3
+        trailLength: 14
+        homingRange: 70
+        homingPower: 0.065
+        homingDelay: 10
+        weaveScale: 2.5
+        weaveMag: 6
+        hitSound: plasmaboom
+        despawnEffect: none
+        collidesTeam: true
+        hitEffect: {
+        type: MultiEffect
+        effects: [
+        {
+        type: ParticleEffect
+        particles: 10
+        sizeFrom: 1.5
+        sizeTo: 0
+        line: true
+        lifetime: 15
+        length: 40
+        baseLength: 4
+        colorTo: FFFFFF
+        colorFrom: 98FFA9
+        }
+        {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 32
+        lifetime: 10
+        strokeFrom: 5
+        strokeTo: 0
+        lenFrom: 0
+        lenTo: 10
+        colorTo: FFFFFF
+        colorFrom: 98FFA9
+        }
+        ]
+      }
+    }
+  }
+]
