@@ -18,7 +18,7 @@ controllable: true
 consumes: {
     power: 8
 }
-shootY: 8
+shootY: 8.5
 shootX: 0
 shootSound: none
 shootEffect: none
@@ -43,15 +43,15 @@ drawer: {
       mirror: true
       under: true
       outline: true
-      moveX: 25
-      moveY: -12
+      X: 18
+      Y: -6
       moveRot: -10
       moves: [
             {
             progress: warmup
             moveRot: 75
-            moveX: 28
-            moveY: -22
+            moveX: 22
+            moveY: -8
             }
           ]
     }
