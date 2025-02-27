@@ -45,11 +45,11 @@ drawer: {
       under: true
       outline: true
       x: 4
-      y: 2
-      rotation: 5
-      moveY: -3
+      y: 0
+      rotation: 15
+      moveY: -2
       moveX: 2
-      moveRot: -35
+      moveRot: -30
     }
   ]
 }
