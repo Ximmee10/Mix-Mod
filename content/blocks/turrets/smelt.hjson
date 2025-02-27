@@ -45,7 +45,7 @@ drawer: {
       outline: true
       moveX: 15
       moveY: -6
-      rotation: -10
+      moveRot: -10
       moves: [
             {
             progress: warmup
