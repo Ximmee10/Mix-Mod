@@ -43,8 +43,9 @@ drawer: {
       mirror: true
       under: true
       outline: true
-      X: 18
-      Y: -6
+      progress: time
+      moveX: 15
+      moveY: -6
       moveRot: -10
       moves: [
             {
