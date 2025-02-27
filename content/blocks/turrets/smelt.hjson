@@ -24,7 +24,7 @@ shootSound: none
 shootEffect: none
 shootType:{
     type: PointLaserBulletType
-    damage: 7
+    damage: 10
     width: 0.2
     color: CF1414
 }
@@ -43,15 +43,15 @@ drawer: {
       mirror: true
       under: true
       outline: true
-      X: 15
-      Y: -8
+      X: 25
+      Y: -20
       moveRot: -10
       moves: [
             {
             progress: warmup
             moveRot: 75
-            moveX: 18
-            moveY: -15
+            moveX: 28
+            moveY: -22
             }
           ]
     }
