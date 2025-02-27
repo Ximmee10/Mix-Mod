@@ -48,8 +48,8 @@ drawer: {
       y: 0
       rotation: 15
       moveY: -2
-      moveX: 0.5
-      moveRot: -30
+      moveX: 1
+      moveRot: -75
     }
   ]
 }
