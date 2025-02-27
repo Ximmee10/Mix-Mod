@@ -43,8 +43,8 @@ drawer: {
       mirror: true
       under: true
       outline: true
-      moveX: 15
-      moveY: -6
+      x: 15
+      y: -6
       moveRot: -10
       moves: [
             {
