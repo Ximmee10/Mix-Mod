@@ -44,12 +44,12 @@ drawer: {
       progress: warmup
       under: true
       outline: true
-      x: 6
-      y: -1
-      rotation: 10
-      moveY: -1.2
-      moveX: 0
-      moveRot: -30
+      x: 4
+      y: 2
+      rotation: 5
+      moveY: -3
+      moveX: 2
+      moveRot: -35
     }
   ]
 }
