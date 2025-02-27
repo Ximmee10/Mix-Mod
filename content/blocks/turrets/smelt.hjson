@@ -41,9 +41,10 @@ drawer: {
       type: RegionPart
       suffix: -side
       mirror: true
+      progress: warmup
       under: true
       outline: true
-      x: 4
+      x: 5
       y: -2.5
       rotation: -10
       moves: [
