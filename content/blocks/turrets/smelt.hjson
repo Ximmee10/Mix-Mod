@@ -6,7 +6,7 @@ size: 2
 targetGround: true
 targetAir: false
 reload: 0
-range: 140
+range: 170
 buildTime: 5.5
 recoil: 0.6
 recoilTime: 50
@@ -24,7 +24,7 @@ shootSound: none
 shootEffect: none
 shootType:{
     type: PointLaserBulletType
-    damage: 5
+    damage: 7
     width: 0.2
     color: CF1414
 }
@@ -43,25 +43,25 @@ drawer: {
       mirror: true
       under: true
       outline: true
-      X: 10
-      Y: -5
+      X: 15
+      Y: -8
       moveRot: -10
       moves: [
             {
             progress: warmup
             moveRot: 75
-            moveX: 12
-            moveY: -10
+            moveX: 18
+            moveY: -15
             }
           ]
     }
   ]
 }
 requirements: [
-    lead/125
+    lead/120
     metaglass/50
-    silicon/40
-    titanium/80
+    silicon/25
+    titanium/60
 ]
 
 researchCostMultiplier: 0.9
