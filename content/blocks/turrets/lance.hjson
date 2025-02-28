@@ -28,11 +28,12 @@ ammoPerShot: 10
 ammoTypes: {
     blast-compound: {
         type: BulletType
+        ammoMultiplier: 3
         speed: 0
         width: 0
         height: 0
         lifetime: 0
-        rangeOverride: 620
+        rangeOverride: 600
         spawnUnit: lance-rocket
         despawnHit: true
         despawnEffect: none
