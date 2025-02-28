@@ -3,8 +3,8 @@ type: missile
 hidden: true
 targetAir: true
 targetGround: true
-speed: 3.5
-hitSize: 8
+speed: 10
+hitSize: 6
 accel: 0.2
 missileAccelTime: 10
 flying: true
@@ -14,7 +14,7 @@ maxRange: 600
 lifetime: 13500
 engineColor: FFB36B
 engineOffset: 10
-engineSize: 4
+engineSize: 2.5
 health: 30
 useUnitsCap: false
 isEnemy: false
