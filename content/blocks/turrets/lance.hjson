@@ -24,6 +24,9 @@ consumes: {
 shootY: 10
 shootX: 0
 maxAmmo: 30
+shoot: {
+    firstShotDelay: 160
+    }
 ammoPerShot: 10
 ammoTypes: {
     blast-compound: {
@@ -52,15 +55,54 @@ drawer: {
       under: false
       outline: true
       x: 0
-      y: -5
+      y: -3
       rotation: 0
-      moveY: 8
+      moveY: 5
       moveX: 0
       moveRot: 0
       moves: [
             {
             progress: recoil
-            y: -4
+            y: -1
+            }
+          ]
+        }
+{
+      type: RegionPart
+      suffix: -part2
+      mirror: false
+      progress: warmup
+      under: true
+      outline: true
+      x: 0
+      y: -1
+      rotation: 0
+      moveY: 5
+      moveX: 0
+      moveRot: 0
+      moves: [
+            {
+            progress: recoil
+            y: -6
+            }
+          ]
+        }
+{
+      type: RegionPart
+      suffix: -part3
+      mirror: true
+      progress: warmup
+      under: false
+      outline: true
+      x: 0
+      y: -2
+      rotation: 0
+      moveY: 2.2
+      moveX: 0
+      moves: [
+            {
+            progress: recoil
+            moveRot: 10
             }
           ]
         }
