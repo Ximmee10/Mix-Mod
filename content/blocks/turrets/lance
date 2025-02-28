@@ -26,14 +26,14 @@ shootX: 0
 maxAmmo: 30
 ammoPerShot: 10
 ammoTypes: {
-    blast-compound: bullet: {
+    blast-compound: {
         type: BulletType
         speed: 0
         width: 0
         height: 0
         lifetime: 0
         rangeOverride: 620
-        spawnUnit: phalanx-rocket
+        spawnUnit: lance-rocket
         despawnHit: true
         despawnEffect: none
         hitEffect: none
