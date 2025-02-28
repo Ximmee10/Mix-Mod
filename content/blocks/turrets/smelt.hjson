@@ -1,6 +1,6 @@
 type: ContinuousTurret
 name: Smelt
-description: Powerful turret that shoots continuous lightning beams.
+description: The turret fires lasers at a single location continuously.
 health: 950
 size: 2
 targetGround: true
