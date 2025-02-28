@@ -21,7 +21,7 @@ physics: false
 playerControllable: false
 targetable: false
 loopSoundVolume: 0.3
-homingDelay: 15
+homingDelay: 12
 trailColor: FFB36B80
 trailLength: 8
 bounded: false
@@ -36,7 +36,7 @@ createWreck: false
     bullet: {
       damage: 0
       splashDamage: 500
-      splashDamageRadius: 52
+      splashDamageRadius: 45
       type: ExplosionBulletType
       collidesAir: true
       collidesGround: true
