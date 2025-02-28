@@ -6,12 +6,12 @@ targetGround: true
 speed: 10
 hitSize: 3
 accel: 0.07
-missileAccelTime: 40
+missileAccelTime: 20
 flying: true
 rotateSpeed: 1.2
 controller: MissileAI
 maxRange: 600
-lifetime: 140
+lifetime: 250
 engineColor: FFB36B
 engineOffset: 10
 engineSize: 2.5
