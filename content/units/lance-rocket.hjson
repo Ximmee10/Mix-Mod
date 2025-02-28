@@ -9,8 +9,8 @@ missileAccelTime: 10
 flying: true
 rotateSpeed: 6
 controller: MissileAI
-maxRange: 210
-lifetime: 50
+maxRange: 600
+lifetime: 120
 engineColor: FFB36B
 engineSize: 2
 health: 60
@@ -34,9 +34,9 @@ createWreck: false
     reload: 1
     shootOnDeath: true
     bullet: {
-      damage:40
-      splashDamage:40
-      splashDamageRadius: 45
+      damage: 50
+      splashDamage: 600
+      splashDamageRadius: 50
       type: ExplosionBulletType
       collidesAir: true
       collidesGround: true
