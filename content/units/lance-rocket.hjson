@@ -5,8 +5,8 @@ targetAir: true
 targetGround: true
 speed: 10
 hitSize: 3
-accel: 0.07
-missileAccelTime: 20
+accel: 0.2
+missileAccelTime: 120
 flying: true
 rotateSpeed: 1.2
 controller: MissileAI
