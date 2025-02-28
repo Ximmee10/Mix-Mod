@@ -6,9 +6,9 @@ targetGround: true
 speed: 6
 hitSize: 3
 accel: 0.1
-missileAccelTime: 12
+missileAccelTime: 60
 flying: true
-rotateSpeed: 1.4
+rotateSpeed: 1.2
 controller: MissileAI
 maxRange: 600
 lifetime: 135
