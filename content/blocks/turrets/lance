@@ -1,0 +1,51 @@
+type: ItemTurret
+name: Lance
+description:
+health: 2500
+size: 4
+targetGround: true
+targetAir: true
+reload: 600
+range: 600
+rotateSpeed: 1.2
+buildTime: 10
+recoil: 3
+recoilTime: 80
+liquidCapacity: 25
+hasLiquid: true
+hasItem: true
+shootSound: missileLarge
+consumes: {
+    coolant: {
+    amount: 0.1
+    optional: true
+    }
+}
+shootY: 10
+shootX: 0
+maxAmmo: 30
+ammoPerShot: 10
+ammoTypes: {
+    blast-compound: bullet: {
+        type: BulletType
+        speed: 0
+        width: 0
+        height: 0
+        lifetime: 0
+        rangeOverride: 620
+        spawnUnit: phalanx-rocket
+        despawnHit: true
+        despawnEffect: none
+        hitEffect: none
+        smokeEffect: none
+    }
+}
+requirements: [
+    copper/150
+    graphite/120
+    silicon/40
+    titanium/80
+]
+researchCostMultiplier: 1
+category: turret
+research: swarmer 
