@@ -12,7 +12,7 @@ controller: MissileAI
 maxRange: 600
 lifetime: 130
 engineColor: FFB36B
-engineSize: 2
+engineSize: 3
 health: 60
 useUnitsCap: false
 isEnemy: false
