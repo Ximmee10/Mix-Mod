@@ -3,10 +3,10 @@ type: missile
 hidden: true
 targetAir: true
 targetGround: true
-speed: 6
+speed: 10
 hitSize: 3
-accel: 0.15
-missileAccelTime: 10
+accel: 0.07
+missileAccelTime: 40
 flying: true
 rotateSpeed: 1.2
 controller: MissileAI
