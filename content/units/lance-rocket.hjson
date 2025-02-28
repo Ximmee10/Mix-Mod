@@ -10,7 +10,7 @@ flying: true
 rotateSpeed: 3
 controller: MissileAI
 maxRange: 600
-lifetime: 150
+lifetime: 130
 engineColor: FFB36B
 engineSize: 2
 health: 60
