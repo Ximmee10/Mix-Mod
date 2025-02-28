@@ -41,6 +41,31 @@ ammoTypes: {
         smokeEffect: none
     }
 }
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -part1
+      mirror: false
+      progress: warmup
+      under: false
+      outline: true
+      x: 0
+      y: -5
+      rotation: 0
+      moveY: 8
+      moveX: 0
+      moveRot: 0
+      moves: [
+            {
+            progress: recoil
+            y: -4
+            }
+          ]
+        }
+        ]
+    }
 requirements: [
     copper/150
     graphite/120
