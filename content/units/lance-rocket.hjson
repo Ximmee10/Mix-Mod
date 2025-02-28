@@ -3,12 +3,12 @@ type: missile
 hidden: true
 targetAir: true
 targetGround: true
-speed: 10
-hitSize: 6
-accel: 0.2
-missileAccelTime: 10
+speed: 3.5
+hitSize: 4
+accel: 0.5
+missileAccelTime: 12
 flying: true
-rotateSpeed: 1.2
+rotateSpeed: 1.4
 controller: MissileAI
 maxRange: 600
 lifetime: 13500
@@ -25,13 +25,7 @@ targetable: true
 loopSoundVolume: 0.3
 homingDelay: 12
 trailColor: FFB36B80
-trailLength: 10
-trailEffect: {
-        type: Effect
-        lifetime: 20
-        color: 5A5A5A
-        size: 4
-    }
+trailLength: 50
 bounded: false
 useUnitCap: false
 createWreck: false
