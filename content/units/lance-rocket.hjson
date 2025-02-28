@@ -7,7 +7,7 @@ speed: 5
 accel: 0.5
 missileAccelTime: 10
 flying: true
-rotateSpeed: 3
+rotateSpeed: 1.8
 controller: MissileAI
 maxRange: 600
 lifetime: 130
@@ -19,11 +19,17 @@ isEnemy: false
 lowAltitude: true
 physics: false
 playerControllable: false
-targetable: false
+targetable: true
 loopSoundVolume: 0.3
 homingDelay: 12
 trailColor: FFB36B80
 trailLength: 8
+trailEffect: {
+        type: Effect
+        lifetime: 20
+        color: 5A5A5A
+        size: 4
+    }
 bounded: false
 useUnitCap: false
 createWreck: false
