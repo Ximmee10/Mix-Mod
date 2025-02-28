@@ -6,12 +6,12 @@ targetGround: true
 speed: 6
 hitSize: 3
 accel: 0.15
-missileAccelTime: 40
+missileAccelTime: 10
 flying: true
 rotateSpeed: 1.2
 controller: MissileAI
 maxRange: 600
-lifetime: 135
+lifetime: 140
 engineColor: FFB36B
 engineOffset: 10
 engineSize: 2.5
@@ -25,7 +25,7 @@ targetable: true
 loopSoundVolume: 0.3
 homingDelay: 12
 trailColor: FFB36B80
-trailLength: 50
+trailLength: 80
 bounded: false
 useUnitCap: false
 createWreck: false
@@ -43,7 +43,7 @@ createWreck: false
       collidesAir: true
       collidesGround: true
       instantDisappear: true
-hitShake: 0.8
+hitShake: 2
 effects: [
         {
             type: ParticleEffect
