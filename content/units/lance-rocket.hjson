@@ -3,17 +3,17 @@ type: missile
 hidden: true
 targetAir: true
 targetGround: true
-speed: 5
+speed: 4.2
 accel: 0.5
 missileAccelTime: 10
 flying: true
 rotateSpeed: 1.8
 controller: MissileAI
 maxRange: 600
-lifetime: 130
+lifetime: 135
 engineColor: FFB36B
-engineSize: 3
-health: 60
+engineSize: 10
+health: 30
 useUnitsCap: false
 isEnemy: false
 lowAltitude: true
@@ -47,6 +47,38 @@ createWreck: false
       collidesAir: true
       collidesGround: true
       instantDisappear: true
+hitShake: 0.8
+effects: [
+        {
+            type: ParticleEffect
+            particles: 10
+            sizeFrom: 2
+            sizeTo: 0
+            lifetime: 15
+            colorFrom: FF7C13
+            colorTo: FFFFFF
+        },
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 45
+            lifetime: 25
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: FF7C13
+            colorTo: FFFFFF
+        }
+    ]
+    despawnEffect: {
+    type: ParticleEffect
+    particles: 6
+    sizeFrom: 2
+    sizeTo: 0
+    lifetime: 22
+    colorFrom: FF7C13
+    colorTo: FFFFFF
+     }
+    }
     }
   }
 ]
