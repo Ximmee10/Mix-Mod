@@ -22,7 +22,7 @@ consumes: {
     items: {
         items: [
         blast-compound/4
-        sporepod/2
+        spore-pod/2
         ]
     }
 }
