@@ -2,7 +2,7 @@
 type: GenericCrafter
 name: Blast Compressor
 description: dzsd
-health: 350
+health: 355
 size: 3
 hasPower: true
 hasLiquids: false
@@ -21,13 +21,13 @@ consumes: {
     power: 2
     items: {
         items: [
-        blastcompound/4
+        blast-compound/4
         sporepod/2
         ]
     }
 }
 outputItems: [
-blastcompound/10
+blast-compound/10
 ]
 category: crafting
 research: graphite-press
