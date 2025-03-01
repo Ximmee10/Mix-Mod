@@ -1,0 +1,10 @@
+type: resource
+name: blastorite
+description: Upgraded from a blast compressor, used as a high-explosive ammo.
+color: 81221B
+flammability: 1.2
+explosiveness: 5.4
+radioactivity: 0
+charge: 0
+hardness: 1
+
