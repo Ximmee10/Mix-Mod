@@ -1,0 +1,82 @@
+
+type: GenericCrafter
+name: Blast Compressor
+description: dzsd
+health: 350
+size: 3
+hasPower: true
+hasLiquids: false
+hasItems: true
+itemCapacity: 20
+buildTime: 1
+craftTime: 240
+heating: 0.01
+researchCostMultiplier: 0.2
+requirements: [
+  lead/60
+  graphite/30
+  titanium/50
+]
+consumes: {
+    power: 2
+    items: {
+        items: [
+        blastcompound/4
+        sporepod/2
+        ]
+    }
+}
+outputItems: [
+blastcompound/10
+]
+category: crafting
+research: graphite-press
+idleSound: respawning
+idleSoundVolume: 0.5
+update: true
+undateEffectChance: 0.5
+updateEffect: {
+    type: particleEffect
+    particles: 10
+    colorFrom: FFFFFF20
+    colorTo: FFFFFF00
+    scaleFrom: 5
+    scaleTo: 0.2
+    lifetime: 200
+    length: 20
+}
+craftEffect: {
+    type: MultiEffect
+    effects: [
+    {
+    type: particleEffect
+    particles: 5
+    colorFrom: FF880050
+    colorTo: 1F000900
+    sizeFrom: 4
+    sizeTo: 6
+    lifetime: 100
+    length: 15
+    }
+    {
+    type: particleEffect
+    particles: 8
+    colorFrom: FFD200FF
+    colorTo: FF8800FF
+    sizeFrom: 1
+    sizeTo: 0
+    lifetime: 70
+    length: 40
+    }
+    {
+    type: particleEffect
+    particle: 20
+    colorFrom: FFFFFF20
+    colorTo: FFFFFF00
+    sizeFrom: 1
+    sizeTo: 6
+    lifetime: 200
+    length: 50
+    }
+]
+}
