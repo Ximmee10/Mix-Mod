@@ -27,7 +27,7 @@ consumes: {
     }
 }
 outputItems: [
-blast-compound/10
+blastorite/1
 ]
 category: crafting
 research: graphite-press
