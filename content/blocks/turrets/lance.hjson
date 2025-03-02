@@ -23,21 +23,35 @@ consumes: {
 }
 shootY: 10
 shootX: 0
-maxAmmo: 30
+maxAmmo: 20
 shoot: {
-    firstShotDelay: 160
+    firstShotDelay: 140
     }
 ammoPerShot: 10
 ammoTypes: {
     blast-compound: {
         type: BulletType
-        ammoMultiplier: 3
+        ammoMultiplier: 2
         speed: 0
         width: 0
         height: 0
         lifetime: 0
         rangeOverride: 620
         spawnUnit: lance-rocket1
+        despawnHit: true
+        despawnEffect: none
+        hitEffect: none
+        smokeEffect: none
+    }
+blastorite: {
+        type: BulletType
+        ammoMultiplier: 10
+        speed: 0
+        width: 0
+        height: 0
+        lifetime: 0
+        rangeOverride: 620
+        spawnUnit: lance-rocket2
         despawnHit: true
         despawnEffect: none
         hitEffect: none
