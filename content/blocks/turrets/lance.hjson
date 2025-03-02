@@ -43,7 +43,7 @@ ammoTypes: {
         hitEffect: none
         smokeEffect: none
     }
-blastorite: {
+    blastorite: {
         type: BulletType
         ammoMultiplier: 10
         speed: 0
