@@ -47,36 +47,6 @@ updateEffect: {
 }
 craftEffect: {
     type: MultiEffect
-    effects: [
-    {
-    type: particleEffect
-    particles: 5
-    colorFrom: FF880050
-    colorTo: 1F000900
-    sizeFrom: 4
-    sizeTo: 6
-    lifetime: 100
-    length: 15
-    }
-    {
-    type: particleEffect
-    particles: 8
-    colorFrom: FFD200FF
-    colorTo: FF8800FF
-    sizeFrom: 1
-    sizeTo: 0
-    lifetime: 70
-    length: 40
-    }
-    {
-    type: particleEffect
-    particle: 20
-    colorFrom: FFFFFF20
-    colorTo: FFFFFF00
-    sizeFrom: 1
-    sizeTo: 6
-    lifetime: 200
-    length: 50
-    }
-]
+    
+  
 }
