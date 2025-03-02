@@ -39,6 +39,7 @@ createWreck: false
       damage: 0
       splashDamage: 500
       splashDamageRadius: 45
+      status: blasted
       type: ExplosionBulletType
       collidesAir: true
       collidesGround: true
