@@ -47,6 +47,26 @@ updateEffect: {
 }
 craftEffect: {
     type: MultiEffect
-    
+    effects: [
+        {
+            type: ParticleEffect
+            particles: 10
+            sizeFrom: 2
+            sizeTo: 0
+            lifetime: 15
+            colorFrom: FF7C13
+            colorTo: FFFFFF
+        },
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 20
+            lifetime: 20
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: FF7C13
+            colorTo: FFFFFF
+        }
+    ]
   
 }
