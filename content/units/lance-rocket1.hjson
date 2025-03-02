@@ -45,4 +45,6 @@ createWreck: false
       collidesGround: true
       instantDisappear: true
       hitShake: 2
+      }
+  }
 ]
