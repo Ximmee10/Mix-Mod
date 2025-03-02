@@ -43,37 +43,5 @@ createWreck: false
       collidesAir: true
       collidesGround: true
       instantDisappear: true
-hitShake: 2
-effects: [
-        {
-            type: ParticleEffect
-            particles: 10
-            sizeFrom: 2
-            sizeTo: 0
-            lifetime: 15
-            colorFrom: FF7C13
-            colorTo: FFFFFF
-        },
-        {
-            type: WaveEffect
-            sizeFrom: 0
-            sizeTo: 45
-            lifetime: 25
-            strokeFrom: 4
-            strokeTo: 0
-            colorFrom: FF7C13
-            colorTo: FFFFFF
-        }
-    ]
-    despawnEffect: {
-    type: ParticleEffect
-    particles: 6
-    sizeFrom: 2
-    sizeTo: 0
-    lifetime: 22
-    colorFrom: FF7C13
-    colorTo: FFFFFF
-     }
-    }
-    }
+      hitShake: 2
 ]
