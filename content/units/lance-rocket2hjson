@@ -38,7 +38,8 @@ createWreck: false
     bullet: {
       damage: 0
       splashDamage: 850
-      splashDamageRadius: 55
+      splashDamageRadius: 60
+      status: blasted
       type: ExplosionBulletType
       collidesAir: true
       collidesGround: true
