@@ -70,3 +70,6 @@ craftEffect: {
     ]
   
 }
+researchCostMultiplier: 1.2
+category: production
+research: blast-Mixer
