@@ -69,5 +69,5 @@ weapons: [
     }
 ]
 researchCostMultiplier: 0.2
-category: unit
+category: units
 research: vehicle Factory
